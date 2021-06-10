@@ -1,2 +1,41 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.banner {
+  color: white;
+  height: 450px;
+  background-size: cover;
+}
+
+.btn-create {
+  text-decoration: none;
+  text-align: center;
+  background-color: #FC0A5B;
+  width: 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+
+.container {
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 10px;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url('https://source.unsplash.com/featured/?{movie}');
+  background-size: cover;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 100px;
+}
+
+h2{
+  margin: auto 0;
+}

@@ -13,10 +13,14 @@ class ListsController < ApplicationController
 
   def create
     @list = List.new(list_params)
-    @list.save
+    if @list.save
+
 
     # no need for app/views/restaurants/create.html.erb
-    redirect_to list_path(@list)
+      redirect_to list_path(@list)
+    else
+      render :new
+    end
   end
 
   private
